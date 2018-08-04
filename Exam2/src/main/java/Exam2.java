@@ -7,7 +7,7 @@ public class Exam2 {
     public static void main(String[] args) {
 
         Scanner scanner=new Scanner(System.in);
-        System.out.print("请输入工资:");
+        System.out.print("请输入工资");
         while (scanner.hasNext()){
             String s=scanner.next();
             if (!s.matches( "[0-9]+")){
@@ -16,7 +16,7 @@ public class Exam2 {
             else{
                 int salary=Integer.parseInt(s);
                 Exam2 exam2=new Exam2();
-                System.out.println("所需要缴纳的税费为："+exam2.salaryCompute(salary));
+                System.out.println("需要缴纳的税费是："+exam2.salaryCompute(salary));
             }
 
 
